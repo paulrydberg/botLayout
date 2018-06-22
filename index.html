@@ -1,0 +1,557 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="custom.css">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    <title>WOLFbot | All In One Solution</title>
+  </head>
+  <body>
+<div class="container-fluid">
+    <div class="">
+        <div class="row">
+            <div class="col-12">
+                <div class="row">
+                    <!-- LEFT SIDE OF PAGE -->
+                    <div class="col-sm-8">
+                        <!-- NAV ABOVE CHART -->
+                        <div class="ourNav">
+                            <div>
+                                <h1>WOLFbot <span id="pairTitle">| BINANCE: USDT/BTC</span></h1>
+                                
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="navLinks">
+                        <ul class="nav nav-tabs">
+                                <li class="nav-item">
+                                  <a class="nav-link active" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="#">Settings</a>
+                                      </li>
+                                      
+                                <li class="nav-item dropdown">
+                                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Coins</a>
+                                  <div class="dropdown-menu scrollable-menu">
+
+                                        <form id="coinSearch" class="form-inline my-2 my-lg-0">
+                                                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                                        </form>
+
+                                        <a class="dropdown-item" href="#"><span><img src="https://s2.coinmarketcap.com/static/img/coins/32x32/1.png" alt="BTC Logo"> </span>Bitcoin (BTC)</a>
+                                        <a class="dropdown-item" href="#"><span><img src="https://s2.coinmarketcap.com/static/img/coins/32x32/1027.png" alt="ETH Logo"> </span>Ethereum (ETH)</a>
+                                        <a class="dropdown-item" href="#"><span><img src="https://s2.coinmarketcap.com/static/img/coins/32x32/52.png" alt="XRP Logo"> </span>Ripple (XRP)</a>
+                                        <a class="dropdown-item" href="#"><span><img src="https://s2.coinmarketcap.com/static/img/coins/32x32/1831.png" alt="BCH Logo"> </span>Bitcoin Cash (BCH)</a>
+                                        <a class="dropdown-item" href="#"><span><img src="https://s2.coinmarketcap.com/static/img/coins/32x32/1765.png" alt="EOS Logo"> </span>EOS (EOS)</a>
+                                        <a class="dropdown-item" href="#"><span><img src="https://s2.coinmarketcap.com/static/img/coins/32x32/2.png" alt="LTC Logo"> </span>Litecoin (LTC)</a>
+                                        <a class="dropdown-item" href="#"><span><img src="https://s2.coinmarketcap.com/static/img/coins/32x32/512.png" alt="XLM Logo"> </span>Stellar (XLM)</a>
+                                        <a class="dropdown-item" href="#"><span><img src="https://s2.coinmarketcap.com/static/img/coins/32x32/2010.png" alt="ADA Logo"> </span>Cardano (ADA)</a>
+                                        <a class="dropdown-item" href="#"><span><img src="https://s2.coinmarketcap.com/static/img/coins/32x32/1720.png" alt="MIOTA Logo"> </span>IOTA (MIOTA)</a>
+                                        <a class="dropdown-item" href="#"><span><img src="https://s2.coinmarketcap.com/static/img/coins/32x32/1958.png" alt="TRX Logo"> </span>TRON (TRX)</a>
+                                        <a class="dropdown-item" href="#"><span><img src="https://s2.coinmarketcap.com/static/img/coins/32x32/1376.png" alt="NEO Logo"> </span>NEO (NEO)</a>
+                                        <a class="dropdown-item" href="#"><span><img src="https://s2.coinmarketcap.com/static/img/coins/32x32/131.png" alt="DASH Logo"> </span>Dash (DASH)</a>
+                                        <a class="dropdown-item" href="#"><span><img src="https://s2.coinmarketcap.com/static/img/coins/32x32/328.png" alt="XMR Logo"> </span>Monero (XMR)</a>
+                                        <a class="dropdown-item" href="#"><span><img src="https://s2.coinmarketcap.com/static/img/coins/32x32/1839.png" alt="BNB Logo"> </span>Binance Coin (BNB)</a>
+                                        
+                                  </div>
+                                </li>
+                                
+                              </ul>
+                            </div>
+                        <!-- END OF NAV ABOVE CHART -->
+
+                        <!-- START OF CHART -->
+                        <div class="ourChart">
+                            <div id="movechart">
+                                    <img id="smallerGraph" src="http://i1027.photobucket.com/albums/y333/EugeneZee/EJukovskiyScreenshot_2016-05-27_10-52-30_zps25szzvfy.png~original" 
+                                    alt="TradingView Chart">
+
+
+
+                                    <div id="mainpagebuysell">
+
+                                        
+                                            <div class="row">
+                                                <div class="col-6" id="moveStratOptions">
+                                                    
+                                                    <div class="btn-group btn-group-md" id="moveAutoManual" role="group" aria-label="Basic example">
+                                                        <button type="button" class="btn btn-success">Automatic Trading <span>(Active)</span></button>
+                                                        <button type="button" class="btn btn-danger">Manual Trading Mode <span>(OFF)</span></button>
+                                                    </div>
+
+                                                    <form class="form-inline">
+                                                            <label class="my-1 mr-2" for="inlineFormCustomSelectPref"></label>
+                                                            <select class="custom-select my-1 mr-sm-2 form-control-sm zeroPadding" id="stratChoose">
+                                                              <option selected>Choose trading strategy</option>
+                                                              <option value="1">WOLFbot Stop Limit Strategy</option>
+                                                              
+                                                              <option value="2">User Uploaded Strategy #1</option>
+                                                              <option value="3">User Uploaded Strategy #2</option>
+                                                            </select>
+                                                          
+                                                            <div class="row">
+                                                                    <div class="col" id="nudgeRight">
+
+                                                                            <div class="custom-control custom-radio custom-control-inline moveRadioSection">
+                                                                                    <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                                                                                    <label class="custom-control-label tradeSettingsRadio" for="customRadioInline1"><span class="moveFixedPercent"><b>Fixed Amount</b></span></label>
+                                                                                  </div>
+                                                                                  
+                                                                                  <div class="custom-control custom-radio custom-control-inline">
+                                                                                    <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                                                                                    <label class="custom-control-label tradeSettingsRadio" for="customRadioInline2"><span class="moveFixedPercent"><b>Percentage %</b></span></label>
+                                                                                  </div>
+                                                                                  
+                                                                            <div class="input-group" id="moveAmountAgain moveAmount">
+
+                                                                                    
+                                                                                    <div class="input-group-prepend dropup">
+                                                                                      
+                                                                                      <button type="button" class="btn btn-dark dropdown-toggle dropdown-toggle-split btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                                        <span class="sr-only">Toggle Dropdown</span>
+                                                                                      </button>
+                                                                                      <div class="dropdown-menu scrollable-amount">
+                                                                                            <a class="dropdown-item" href="#">Spend 100%</a>
+                                                                                            <a class="dropdown-item" href="#">Spend 95%</a>
+                                                                                            <a class="dropdown-item" href="#">Spend 90%</a>
+                                                                                            <a class="dropdown-item" href="#">Spend 85%</a>
+                                                                                            <a class="dropdown-item" href="#">Spend 80%</a>
+                                                                                            <a class="dropdown-item" href="#">Spend 75%</a>
+                                                                                            <a class="dropdown-item" href="#">Spend 70%</a>
+                                                                                            <a class="dropdown-item" href="#">Spend 65%</a>
+                                                                                            <a class="dropdown-item" href="#">Spend 60%</a>
+                                                                                            <a class="dropdown-item" href="#">Spend 55%</a>
+                                                                                            <a class="dropdown-item" href="#">Spend 50%</a>
+                                                                                            <a class="dropdown-item" href="#">Spend 45%</a>
+                                                                                            <a class="dropdown-item" href="#">Spend 40%</a>
+                                                                                            <a class="dropdown-item" href="#">Spend 35%</a>
+                                                                                            <a class="dropdown-item" href="#">Spend 30%</a>
+                                                                                            <a class="dropdown-item" href="#">Spend 25%</a>
+                                                                                            <a class="dropdown-item" href="#">Spend 20%</a>
+                                                                                            <a class="dropdown-item" href="#">Spend 15%</a>
+                                                                                            <a class="dropdown-item" href="#">Spend 10%</a>
+                                                                                            <a class="dropdown-item" href="#">Spend 5%</a>
+                                                                                      </div>
+                                                                                    </div>
+                                                                                    <label for="amountToBuy"></label>
+                                                                                    <input type="text" class="form-control takeAwayPadding" aria-label="Text input with segmented dropdown button" placeholder="Amount To Buy">
+                                                                                  </div>
+                                                                    </div>
+                                                                    <div class="col">
+                                                                            <div class="custom-control custom-radio custom-control-inline moveRadioSection">
+                                                                                    <input type="radio" id="customRadioInline3" name="customRadioInline3" class="custom-control-input">
+                                                                                    <label class="custom-control-label tradeSettingsRadio" for="customRadioInline3"><span class="moveFixedPercent"><b>Fixed Amount</b></span></label>
+                                                                                  </div>
+                                                                                  
+                                                                                  <div class="custom-control custom-radio custom-control-inline">
+                                                                                    <input type="radio" id="customRadioInline4" name="customRadioInline3" class="custom-control-input">
+                                                                                    <label class="custom-control-label tradeSettingsRadio" for="customRadioInline4"><span class="moveFixedPercent"><b>Percentage %</b></span></label>
+                                                                                  </div>
+                                                                                  
+                                                                            <div class="input-group" id="moveAmountAgain moveAmount">
+                                                                                    <div class="input-group-prepend dropup">
+                                                                                      
+                                                                                      <button type="button" class="btn btn-dark dropdown-toggle dropdown-toggle-split btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                                        <span class="sr-only">Toggle Dropdown</span>
+                                                                                      </button>
+                                                                                      <div class="dropdown-menu scrollable-amount">
+                                                                                            <a class="dropdown-item" href="#">Sell 100%</a>
+                                                                                            <a class="dropdown-item" href="#">Sell 95%</a>
+                                                                                            <a class="dropdown-item" href="#">Sell 90%</a>
+                                                                                            <a class="dropdown-item" href="#">Sell 85%</a>
+                                                                                            <a class="dropdown-item" href="#">Sell 80%</a>
+                                                                                            <a class="dropdown-item" href="#">Sell 75%</a>
+                                                                                            <a class="dropdown-item" href="#">Sell 70%</a>
+                                                                                            <a class="dropdown-item" href="#">Sell 65%</a>
+                                                                                            <a class="dropdown-item" href="#">Sell 60%</a>
+                                                                                            <a class="dropdown-item" href="#">Sell 55%</a>
+                                                                                            <a class="dropdown-item" href="#">Sell 50%</a>
+                                                                                            <a class="dropdown-item" href="#">Sell 45%</a>
+                                                                                            <a class="dropdown-item" href="#">Sell 40%</a>
+                                                                                            <a class="dropdown-item" href="#">Sell 35%</a>
+                                                                                            <a class="dropdown-item" href="#">Sell 30%</a>
+                                                                                            <a class="dropdown-item" href="#">Sell 25%</a>
+                                                                                            <a class="dropdown-item" href="#">Sell 20%</a>
+                                                                                            <a class="dropdown-item" href="#">Sell 15%</a>
+                                                                                            <a class="dropdown-item" href="#">Sell 10%</a>
+                                                                                            <a class="dropdown-item" href="#">Sell 5%</a>
+                                                                                      </div>
+                                                                                    </div>
+                                                                                    <label for="amountToSell"></label>
+                                                                                    <input type="text" class="form-control takeAwayPadding" aria-label="Text input with segmented dropdown button" placeholder="Amount To Sell">
+                                                                                  </div>
+                                                                    </div>
+                                                                  </div>
+
+                                                            
+
+                                                                  <br>
+
+                                                                      <div class="custom-control custom-checkbox my-1 mr-sm-2" id="applyChanges">
+                                                                            <input type="checkbox" class="custom-control-input" id="customControlInline">
+                                                                            <label class="custom-control-label" for="customControlInline">Save as default settings for this coin</label>
+                                                                          
+                                                                        
+                                                                        </div>
+                                                          
+                                                            <button type="submit" id="applyButtonMove" class="btn btn-primary btn-sm my-1">Apply Changes</button>
+                                                          </form>
+
+
+                                                          
+
+                                                </div>
+                                                
+                                                    <div class="col">
+                                                       
+                                                            <form>
+                                                    
+                                                    
+                                                    
+    
+                                                                    <div class="form-row">
+                                                                            <div class="form-group col">
+                                                                              <label for="stopPrice"></label>
+                                                                              <input type="text" class="form-control form-control-md tradeValues" id="stopPrice" placeholder="Stop Price">
+                                                                              
+                                                                              
+                                                                              <label for="pricePerPair"></label>
+                                                                              <input type="text" class="form-control form-control-md tradeValues" id="coinExecutionPrice" placeholder="Limit Price">
+                                                                              <div class="input-group" id="moveAmount">
+                                                                                    <div class="input-group-prepend dropup">
+                                                                                      
+                                                                                      <button type="button" class="btn btn-dark dropdown-toggle dropdown-toggle-split btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                                        <span class="sr-only">Toggle Dropdown</span>
+                                                                                      </button>
+                                                                                      <div class="dropdown-menu scrollable-amount">
+                                                                                            <a class="dropdown-item" href="#">Spend 100%</a>
+                                                                                            <a class="dropdown-item" href="#">Spend 95%</a>
+                                                                                            <a class="dropdown-item" href="#">Spend 90%</a>
+                                                                                            <a class="dropdown-item" href="#">Spend 85%</a>
+                                                                                            <a class="dropdown-item" href="#">Spend 80%</a>
+                                                                                            <a class="dropdown-item" href="#">Spend 75%</a>
+                                                                                            <a class="dropdown-item" href="#">Spend 70%</a>
+                                                                                            <a class="dropdown-item" href="#">Spend 65%</a>
+                                                                                            <a class="dropdown-item" href="#">Spend 60%</a>
+                                                                                            <a class="dropdown-item" href="#">Spend 55%</a>
+                                                                                            <a class="dropdown-item" href="#">Spend 50%</a>
+                                                                                            <a class="dropdown-item" href="#">Spend 45%</a>
+                                                                                            <a class="dropdown-item" href="#">Spend 40%</a>
+                                                                                            <a class="dropdown-item" href="#">Spend 35%</a>
+                                                                                            <a class="dropdown-item" href="#">Spend 30%</a>
+                                                                                            <a class="dropdown-item" href="#">Spend 25%</a>
+                                                                                            <a class="dropdown-item" href="#">Spend 20%</a>
+                                                                                            <a class="dropdown-item" href="#">Spend 15%</a>
+                                                                                            <a class="dropdown-item" href="#">Spend 10%</a>
+                                                                                            <a class="dropdown-item" href="#">Spend 5%</a>
+                                                                                      </div>
+                                                                                    </div>
+                                                                                    <label for="amountToBuy"></label>
+                                                                                    <input type="text" class="form-control takeAwayPadding" aria-label="Text input with segmented dropdown button" placeholder="Amount To Buy">
+                                                                                  </div>
+                                                                              
+                                                                              
+                                                                              
+                                                                              
+
+                                                                              
+                                                                              
+                                                                              <label for="buyCoinAmount"></label>
+                                                                              <input type="text" class="form-control form-control-md tradeValues" id="buyCoinAmount" placeholder="USDT to purchase">
+                                                                              <button type="submit" class="btn btn-success tradeValues" id="buyNow">Buy Now</button>
+                                                                              <div id="moveFeeInfo">
+                                                                              <div class="feeInfo">
+                                                                                Buy BTC with USDT
+                                                                              </div>
+                                                                              <div class="feeInfo">
+                                                                                Est. Fee: 0% USDT
+                                                                              </div>
+                                                                            </div>
+                                                                          </div>
+                                                                          </div>
+                                                                        </form>
+                                                    </div>
+                                                    <div class="col">
+                                                            <form>
+                                                                    <div class="form-row">
+                                                                                                                    
+                                                                                                                 
+                                                                          <div class="form-group col">
+                                                                                  <label for="stopPrice"></label>
+                                                                                  <input type="text" class="form-control form-control-md tradeValues" id="stopPrice" placeholder="Stop Price">
+                                                                                  
+                                                                                  
+                                                                                  <label for="pricePerPair"></label>
+                                                                                  <input type="text" class="form-control form-control-md tradeValues" id="coinExecutionPrice" placeholder="Limit Price">
+                                                                                  
+                                                                                  <div class="input-group" id="moveAmount">
+                                                                                        <div class="input-group-prepend dropup">
+                                                                                          
+                                                                                          <button type="button" class="btn btn-dark dropdown-toggle dropdown-toggle-split btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                                            <span class="sr-only">Toggle Dropdown</span>
+                                                                                          </button>
+                                                                                          <div class="dropdown-menu scrollable-amount">
+                                                                                                <a class="dropdown-item" href="#">Sell 100%</a>
+                                                                                                <a class="dropdown-item" href="#">Sell 95%</a>
+                                                                                                <a class="dropdown-item" href="#">Sell 90%</a>
+                                                                                                <a class="dropdown-item" href="#">Sell 85%</a>
+                                                                                                <a class="dropdown-item" href="#">Sell 80%</a>
+                                                                                                <a class="dropdown-item" href="#">Sell 75%</a>
+                                                                                                <a class="dropdown-item" href="#">Sell 70%</a>
+                                                                                                <a class="dropdown-item" href="#">Sell 65%</a>
+                                                                                                <a class="dropdown-item" href="#">Sell 60%</a>
+                                                                                                <a class="dropdown-item" href="#">Sell 55%</a>
+                                                                                                <a class="dropdown-item" href="#">Sell 50%</a>
+                                                                                                <a class="dropdown-item" href="#">Sell 45%</a>
+                                                                                                <a class="dropdown-item" href="#">Sell 40%</a>
+                                                                                                <a class="dropdown-item" href="#">Sell 35%</a>
+                                                                                                <a class="dropdown-item" href="#">Sell 30%</a>
+                                                                                                <a class="dropdown-item" href="#">Sell 25%</a>
+                                                                                                <a class="dropdown-item" href="#">Sell 20%</a>
+                                                                                                <a class="dropdown-item" href="#">Sell 15%</a>
+                                                                                                <a class="dropdown-item" href="#">Sell 10%</a>
+                                                                                                <a class="dropdown-item" href="#">Sell 5%</a>
+                                                                                          </div>
+                                                                                        </div>
+                                                                                        <label for="amountToSell"></label>
+                                                                                        <input type="text" class="form-control takeAwayPadding" aria-label="Text input with segmented dropdown button" placeholder="Amount To Sell">
+                                                                                      </div>
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+
+                                                                                  
+                                                                                  
+                                                                                  <label for="buyCoinAmount"></label>
+                                                                                  <input type="text" class="form-control form-control-md tradeValues" id="buyCoinAmount" placeholder="USDT to receive">
+                                                                                  <button type="submit" class="btn btn-danger tradeValues" id="sellNow">Sell Now</button>
+                                                                                  <div id="moveFeeInfo">
+
+                                                                                  <div class="feeInfo">
+                                                                                        
+                                                                                        Sell BTC for USDT 
+                                                                                      </div>
+                                                                                      <div class="feeInfo">
+                                                                                        
+                                                                                        Est. Fee: 0% BTC
+                                                                                      </div>
+                                                                                    </div>
+                                                                              </div>
+                                                              
+                                                              
+                                                                          </div>
+                                                                      </form>
+                                                                      
+                                                    </div>
+                                                  </div>
+                                                 </div>
+                            </div>
+
+                            
+                            
+                                
+                        </div>
+                        <!-- END OF CHART -->
+
+                        <!-- START OF PROFITS/LOSSES -->
+                        <div class="ourPL">
+                            <h2>
+                                Profits/Losses
+                            </h2>
+                            <div class="row">
+                                <div class="col">
+                                    DATE
+                                    <div class="col-sm">
+                                        data
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    AMOUNT
+                                    <div class="col-sm">
+                                        data
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    %%% PERCENTAGE
+                                    <div class="col-sm">
+                                        data
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    COIN/STOCK
+                                    <div class="col-sm">
+                                        data
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END OF PROFITS/LOSSES -->
+                    </div>
+
+
+                    <!-- RIGHT SIDE OF PAGE -->
+                    <div class="col-sm-4">
+                        <!-- TOP OF LEADERBOARD -->
+                        <div class="leaderBoard">
+                            <h2>
+                                Leaderboard
+                            </h2>
+                        </div>
+
+                        <!-- WHERE LEADERBOARD ACTUALLY STARTS -->
+                    <div class="lBoard">
+                            <div class="row">
+                                <div class="col-3">
+                                    <ol>
+                                        Trader Name
+                                    </ol>
+                                </div>
+                                <div class="col-4">
+                                    Last 30 Day Profit
+                                </div>
+                                <div class="col-5 centertext">
+                                    30 Day Graph
+                                </div>
+                            </div>
+                        <div class="row">
+                            <div class="col">
+                                <ol>
+                                    <span>1.</span> John Doe
+                                </ol>
+                            </div>
+                            <div class="col">
+                                $ <span>43,543</span>
+                            </div>
+                            <div class="col">
+                                <img src="https://s2.coinmarketcap.com/generated/sparklines/web/7d/usd/1.png" 
+                                alt="CoinMarketCapExample">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <ol>
+                                    <span>2.</span> Jane Doe
+                                </ol>
+                            </div>
+                            <div class="col">
+                                $ <span>43,543</span>
+                            </div>
+                            <div class="col">
+                                <img src="https://s2.coinmarketcap.com/generated/sparklines/web/7d/usd/52.png" 
+                                alt="CoinMarketCapExample">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <ol>
+                                    <span>3.</span> John Doe #2
+                                </ol>
+                            </div>
+                            <div class="col">
+                                $ <span>43,543</span>
+                            </div>
+                            <div class="col">
+                                <img src="https://s2.coinmarketcap.com/generated/sparklines/web/7d/usd/1765.png" 
+                                alt="CoinMarketCapExample">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <ol>
+                                    <span>4.</span> Jane Doe #2
+                                </ol>
+                            </div>
+                            <div class="col">
+                                $ <span>43,543</span>
+                            </div>
+                            <div class="col">
+                                <img src="https://s2.coinmarketcap.com/generated/sparklines/web/7d/usd/825.png" 
+                                alt="CoinMarketCapExample">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <ol>
+                                    <span>5.</span> John Doe
+                                </ol>
+                            </div>
+                            <div class="col">
+                                $ <span>43,543</span>
+                            </div>
+                            <div class="col">
+                                <img src="https://s2.coinmarketcap.com/generated/sparklines/web/7d/usd/1.png" 
+                                alt="CoinMarketCapExample">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <ol>
+                                    <span>6.</span> Jane Doe
+                                </ol>
+                            </div>
+                            <div class="col">
+                                $ <span>43,543</span>
+                            </div>
+                            <div class="col">
+                                <img src="https://s2.coinmarketcap.com/generated/sparklines/web/7d/usd/52.png" 
+                                alt="CoinMarketCapExample">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <ol>
+                                    <span>7.</span> John Doe #2
+                                </ol>
+                            </div>
+                            <div class="col">
+                                $ <span>43,543</span>
+                            </div>
+                            <div class="col">
+                                <img src="https://s2.coinmarketcap.com/generated/sparklines/web/7d/usd/1765.png" 
+                                alt="CoinMarketCapExample">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <ol>
+                                    <span>8.</span> Jane Doe #2
+                                </ol>
+                            </div>
+                            <div class="col">
+                                $ <span>43,543</span>
+                            </div>
+                            <div class="col">
+                                <img src="https://s2.coinmarketcap.com/generated/sparklines/web/7d/usd/825.png" 
+                                alt="CoinMarketCapExample">
+                            </div>
+                        </div>
+                    </div>
+                        <!-- END OF LEADERBOARD -->
+
+                        <!-- TOP COINS -->
+                        <div class="topCoins">
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  </body>
+</html>

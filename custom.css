@@ -1,0 +1,223 @@
+* {
+    font-family: 'Cabin', sans-serif;
+    padding: 0%;
+    border: 0px;
+}
+
+
+.mainbgcol {
+    /* background-color: rgb(179, 179, 179); */
+}
+
+.border {
+    /* border: 3px solid rgb(0, 0, 0); */
+    /* background-color: rgb(179, 179, 179); */
+    /* z-index: 900; */
+}
+
+.maincontainer {
+    width: 97%;
+    position: relative;
+    /* left: 1.5%; */
+}
+
+.deskView {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#pairTitle {
+    font-size: 70%;
+}
+
+.doInline {
+    display: inline;
+    float: right;
+}
+
+.HomeMenu {
+    display: inline;
+}
+
+.ourNav {
+    background-color: rgba(123, 255, 0, 0.322);
+    position: relative;
+}
+
+.navLinks {
+    position: absolute;
+    z-index: 900;
+    right: 3%;
+    top: 0.8%;
+}
+
+.ourChart {
+    background-color: rgba(251, 255, 0, 0.322);
+    position: relative;
+    height: 666px;
+}
+
+#movechart {
+    position: absolute;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
+
+.ourPL {
+    background-color: rgba(255, 153, 0, 0.322);
+    height: 150px;
+}
+
+.leaderBoard {
+    background-color: rgba(0, 255, 0, 0.322);
+}
+
+.lBoard {
+    background-color: rgba(0, 255, 255, 0.322);
+}
+
+.topCoins {
+    background-color: rgba(0, 255, 0, 0.322);
+    height: 150px;
+}
+
+#smallerGraph {
+    position: relative;
+    width: 918px;
+    height: 465px;
+    z-index: 0;
+}
+
+#mainpagebuysell {
+    width: 100%;
+    position: absolute;
+    left: -10px;
+    margin-top: -8px;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+
+}
+
+.scrollable-menu {
+    height: auto;
+    max-height: 500px;
+    width: 300px;
+    overflow-x: hidden;
+    
+}
+
+#coinSearch {
+    padding-top: 0px;
+    padding-left: 7px;
+    padding-bottom: 5px;
+}
+
+.tradeValues {
+    padding: 2%;
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+
+#buyNow {
+    margin-top: 15px;
+    margin-left: 60%;
+}
+
+#sellNow {
+    margin-top: 15px;
+    margin-left: 60%;
+}
+
+#stopPrice {
+    
+}
+
+.centertext {
+    text-align: center;
+}
+
+.feeInfo {
+    font-size: 70%;
+}
+
+#moveFeeInfo {
+    margin-top: -25px;
+}
+
+#moveAmount {
+    margin-top: 14px;
+}
+
+#buyCoinAmount {
+    margin-top: -20px;
+}
+
+.scrollable-amount {
+    height: auto;
+    max-height: 200px;
+    width: 217px;
+    overflow-x: hidden;
+    
+}
+
+.takeAwayPadding {
+    padding: 2%;
+}
+
+#moveStratOptions {
+    margin-top: 14px;
+    margin-left: 17px;
+}
+
+#stratChoose {
+    width: 350px;
+    margin-left: 45px;
+}
+
+.stratChooseBuySell {
+    width: 50px;
+}
+
+.tradeSettingsRadio {
+    font-size: 64%;
+}
+
+.moveFixedPercent {
+    margin-top: 4px;
+    margin-left: -5px;
+}
+
+.zeroPadding {
+    padding: 0%;
+    padding-left: 13px;
+}
+
+#moveAutoManual {
+    margin-left: 25px;
+}
+
+.moveRadioSection {
+    margin-top: 0px;
+}
+
+#moveAmountAgain {
+    
+}
+
+#nudgeRight {
+    padding-left: 37px;
+}
+
+#applyChanges {
+    margin-left: 42px;
+    margin-top: 25px;
+}
+
+#applyButtonMove {
+    /* margin-top: 900px; */
+}
+
