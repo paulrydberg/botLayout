@@ -254,21 +254,31 @@
                                                                                     <label for="amountToSell"></label>
                                                                                     <input type="text" class="form-control takeAwayPadding" aria-label="Text input with segmented dropdown button" placeholder="Amount To Sell">
                                                                                   </div>
+                                                                                  
                                                                     </div>
+                                                                    
                                                                   </div>
+                                                                  
+                                                                  
+                                                                      
+                                                                  
+                                                                  
 
-                                                            
+                                                                  <div class="custom-control custom-checkbox my-1 mr-sm-2 pyramidBuyBox" id="dontGoLongMove">
+                                                                      
+                                                                      <input type="checkbox" class="custom-control-input" id="customControlInline20">
+                                                                      <label class="custom-control-label smallerText" for="customControlInline20">Go Short After Or Instead Of Selling.</label>
+                                                                      
+                                                                      
+                                                                  
+                                                                  </div>
+                                                                  <div class="custom-control custom-checkbox my-1 mr-sm-2 pyramidBuyBox" id="dontGoLongMove">
+                                                                  <input type="checkbox" class="custom-control-input" id="customControlInline21">
+                                                                  <label class="custom-control-label smallerText" for="customControlInline21">Don't Go Long, Just Close Short Positions.</label>
+                                                                    </div>
 
-                                                                  <br>
-
-                                                                      <div class="custom-control custom-checkbox my-1 mr-sm-2" id="applyChanges">
-                                                                            <input type="checkbox" class="custom-control-input" id="customControlInline">
-                                                                            <label class="custom-control-label" for="customControlInline">Save as default settings for this coin</label>
-                                                                          
-                                                                        
-                                                                        </div>
-                                                          
-                                                            <button type="submit" id="applyButtonMove" class="btn btn-primary btn-sm my-1">Apply Changes</button>
+                                                                    
+                                                                  
                                                           </form>
 
 
@@ -284,14 +294,113 @@
                                                     
     
                                                                     <div class="form-row">
-                                                                            <div class="form-group col">
-                                                                              <label for="stopPrice"></label>
-                                                                              <input type="text" class="form-control form-control-md tradeValues" id="stopPrice" placeholder="Stop Price">
+                                                                            <div class="form-group">
+
+
+                                                                                <div class="custom-control custom-checkbox my-1 mr-sm-2 pyramidBuyBox" id="applyChanges">
+                                                                                    <input type="checkbox" class="custom-control-input" id="customControlInline2">
+                                                                                    <label class="custom-control-label smallerText" for="customControlInline2">Enable Pyramid Buying</label>
+                                                                                  
+                                                                                
+                                                                                </div>
+                                                                                
+                                                                                
+                                                                                
+                                                                                
                                                                               
                                                                               
-                                                                              <label for="pricePerPair"></label>
-                                                                              <input type="text" class="form-control form-control-md tradeValues" id="coinExecutionPrice" placeholder="Limit Price">
-                                                                              <div class="input-group" id="moveAmount">
+                                                                                <div class="input-group" id="moveBuyValuesBox">
+                                                                                    <div class="input-group-prepend dropup">
+                                                                                      
+                                                                                      <button type="button" class="btn btn-dark dropdown-toggle dropdown-toggle-split btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                                        <span class="sr-only">Toggle Dropdown</span>
+                                                                                      </button>
+                                                                                      <div class="dropdown-menu scrollable-amount bg-dark">
+                                                                                          
+                                                                                        
+                                                                                        <label for="buyCoinAmount"></label>
+                                                                                          <input type="text" class="form-control form-control-sm tradeValues pyramidBuySettings" 
+                                                                                          id="pyramidBuyValues" placeholder="Initial Buy -- $ or %">
+
+
+                                                                                          <table class="table table-hover table-dark centertext">
+                                                                                              <thead>
+                                                                                                <tr class="smallerText">
+                                                                                                  <th scope="col">Increase By</th>
+                                                                                                  <th scope="col">Decrease By</th>
+                                                                                                </tr>
+                                                                                              </thead>
+                                                                                              <tbody>
+                                                                                                <tr>
+                                                                                                  <td class="winHighlight">+5%</td>
+                                                                                                  <td class="lossHighlight">-5%</td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td class="winHighlight">+10%</td>
+                                                                                                  <td class="lossHighlight">-10%</td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td class="winHighlight">+15%</td>
+                                                                                                  <td class="lossHighlight">-15%</td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td class="winHighlight">+20%</td>
+                                                                                                    <td class="lossHighlight">-20%</td>
+                                                                                                  </tr>
+                                                                                                  <tr>
+                                                                                                      <td class="winHighlight">+25%</td>
+                                                                                                      <td class="lossHighlight">-25%</td>
+                                                                                                    </tr>
+                                                                                                    <tr>
+                                                                                                        <td class="winHighlight">+30%</td>
+                                                                                                        <td class="lossHighlight">-30%</td>
+                                                                                                      </tr>
+                                                                                                      <tr>
+                                                                                                          <td class="winHighlight">+35%</td>
+                                                                                                          <td class="lossHighlight">-35%</td>
+                                                                                                        </tr>
+                                                                                                        <tr>
+                                                                                                            <td class="winHighlight">+40%</td>
+                                                                                                            <td class="lossHighlight">-40%</td>
+                                                                                                          </tr>
+                                                                                                          <tr>
+                                                                                                              <td class="winHighlight">+45%</td>
+                                                                                                              <td class="lossHighlight">-45%</td>
+                                                                                                            </tr>
+                                                                                                            <tr>
+                                                                                                                <td class="winHighlight">+50%</td>
+                                                                                                                <td class="lossHighlight">-50%</td>
+                                                                                                              </tr>
+                                                                                              </tbody>
+                                                                                            </table>
+
+
+                                                                                      </div>
+                                                                                    </div>
+
+
+
+
+                                                                                    
+
+                                                                                    <label for="amountToBuy"></label>
+                                                                                    <input data-toggle="tooltip" data-placement="right" data-html="true" 
+                                                                                    title="<em>Use The Arrow To Left To Set Your Initial Buy Amount & To Set Increase/Decreasing Position Size Per Buy.</em>" 
+                                                                                    type="text" class="form-control takeAwayPadding" aria-label="Text input with segmented dropdown button" 
+                                                                                    id="" placeholder="Pyramid Buy Values">
+
+
+
+
+
+
+                                                                                  </div>
+
+                                                                                  
+
+
+
+                                                                              <div class="input-group" id="moveGainValuesBox">
                                                                                     <div class="input-group-prepend dropup">
                                                                                       
                                                                                       <button type="button" class="btn btn-dark dropdown-toggle dropdown-toggle-split btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -302,32 +411,36 @@
                                                                                               <a class="dropdown-item" href="#">Set Fixed Amounts</a>    
                                                                                              <div class="dropdown-divider"></div>
                                                                                              </span>
-                                                                                            <a class="dropdown-item" href="#">Spend 100%</a>
-                                                                                            <a class="dropdown-item" href="#">Spend 95%</a>
-                                                                                            <a class="dropdown-item" href="#">Spend 90%</a>
-                                                                                            <a class="dropdown-item" href="#">Spend 85%</a>
-                                                                                            <a class="dropdown-item" href="#">Spend 80%</a>
-                                                                                            <a class="dropdown-item" href="#">Spend 75%</a>
-                                                                                            <a class="dropdown-item" href="#">Spend 70%</a>
-                                                                                            <a class="dropdown-item" href="#">Spend 65%</a>
-                                                                                            <a class="dropdown-item" href="#">Spend 60%</a>
-                                                                                            <a class="dropdown-item" href="#">Spend 55%</a>
-                                                                                            <a class="dropdown-item" href="#">Spend 50%</a>
-                                                                                            <a class="dropdown-item" href="#">Spend 45%</a>
-                                                                                            <a class="dropdown-item" href="#">Spend 40%</a>
-                                                                                            <a class="dropdown-item" href="#">Spend 35%</a>
-                                                                                            <a class="dropdown-item" href="#">Spend 30%</a>
-                                                                                            <a class="dropdown-item" href="#">Spend 25%</a>
-                                                                                            <a class="dropdown-item" href="#">Spend 20%</a>
-                                                                                            <a class="dropdown-item" href="#">Spend 15%</a>
-                                                                                            <a class="dropdown-item" href="#">Spend 10%</a>
-                                                                                            <a class="dropdown-item" href="#">Spend 5%</a>
+                                                                                             <a class="dropdown-item" href="#">1% Gain</a>
+                                                                                             <a class="dropdown-item" href="#">2% Gain</a>  
+                                                                                             <a class="dropdown-item" href="#">3% Gain</a>
+                                                                                             <a class="dropdown-item" href="#">4% Gain</a>
+                                                                                               <a class="dropdown-item" href="#">5% Gain</a>
+                                                                                               <a class="dropdown-item" href="#">6% Gain</a>
+                                                                                               <a class="dropdown-item" href="#">7% Gain</a>
+                                                                                               <a class="dropdown-item" href="#">8% Gain</a>
+                                                                                               <a class="dropdown-item" href="#">9% Gain</a>
+                                                                                               <a class="dropdown-item" href="#">10% Gain</a>
+                                                                                               <span>
+                                                                                                  <div class="dropdown-divider"></div>
+                                                                                                <a class="dropdown-item" href="#">Set Custom Percentages</a>    
+                                                                                               <div class="dropdown-divider"></div>
+                                                                                               </span>
+                                                                                               <a class="dropdown-item" href="#">15% Gain</a>
+                                                                                               <a class="dropdown-item" href="#">20% Gain</a>
+                                                                                               <a class="dropdown-item" href="#">25% Gain</a>
+                                                                                               <a class="dropdown-item" href="#">30% Gain</a>
+                                                                                               <a class="dropdown-item" href="#">35% Gain</a>
+                                                                                               <a class="dropdown-item" href="#">40% Gain</a>
+                                                                                               <a class="dropdown-item" href="#">45% Gain</a>
+                                                                                               <a class="dropdown-item" href="#">50% Gain</a>
                                                                                       </div>
                                                                                     </div>
                                                                                     <label for="amountToBuy"></label>
                                                                                     <input data-toggle="tooltip" data-placement="right" data-html="true" 
-                                                                                    title="<em>You Must Specify A '$' Sign To Set A Typed Fixed Amount Otherwise It Will Be A Percentage. Any Number larger than 100 without a '$' in front of it will default as 100%</u></b></em> <em><b><u></u></em></b>" 
-                                                                                    type="text" class="form-control takeAwayPadding" aria-label="Text input with segmented dropdown button" placeholder="Amount To Buy">
+                                                                                    title="<em>This Prevent WOLFbot From Selling Below A Specified Amount. It Is Recommended You Set This To ZERO Percent (0%) If You Are Using The WOLFbot Stop-Limit Strategy. We Don't Believe In Holding Bags. If You Are Using Your Own Strategy Feel Free To Utilize This Feature.</em>" 
+                                                                                    type="text" class="form-control takeAwayPadding" aria-label="Text input with segmented dropdown button" 
+                                                                                    placeholder="Gain Override">
                                                                                   </div>
                                                                               
                                                                               
@@ -336,19 +449,10 @@
 
                                                                               
                                                                               
-                                                                              <label for="buyCoinAmount"></label>
-                                                                              <input type="text" class="form-control form-control-md tradeValues" id="buyCoinAmount" placeholder="USDT to purchase">
-                                                                              <button type="submit" class="btn btn-success tradeValues" id="buyNow">Buy Now</button>
-                                                                              <div id="moveFeeInfo">
-                                                                              <div class="feeInfo">
-                                                                                Buy BTC with USDT
-                                                                              </div>
-                                                                              <div class="feeInfo">
-                                                                                Est. Fee: 0% USDT
-                                                                              </div>
-                                                                            </div>
+                                                                              
                                                                           </div>
                                                                           </div>
+                                                                          
                                                                         </form>
                                                     </div>
                                                     <div class="col">
@@ -356,15 +460,107 @@
                                                                     <div class="form-row">
                                                                                                                     
                                                                                                                  
-                                                                          <div class="form-group col">
-                                                                                  <label for="stopPrice"></label>
-                                                                                  <input type="text" class="form-control form-control-md tradeValues" id="stopPrice" placeholder="Stop Price">
+                                                                          <div class="form-group">
+                                                                              <div class="custom-control custom-checkbox my-1 mr-sm-2 pyramidBuyBox" id="applyChanges">
+                                                                                  <input type="checkbox" class="custom-control-input" id="customControlInline7">
+                                                                                  <label class="custom-control-label smallerText" for="customControlInline7">Enable Pyramid Selling</label>
+                                                                                
+                                                                              
+                                                                              </div>
+                                                                              
+                                                                              
+                                                                              
+                                                                              
+                                                                            
+                                                                            
+                                                                              <div class="input-group" id="moveBuyValuesBox">
+                                                                                  <div class="input-group-prepend dropup">
+                                                                                    
+                                                                                    <button type="button" class="btn btn-dark dropdown-toggle dropdown-toggle-split btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                                      <span class="sr-only">Toggle Dropdown</span>
+                                                                                    </button>
+                                                                                    <div class="dropdown-menu scrollable-amount bg-dark">
+                                                                                        
+                                                                                      
+                                                                                      <label for="buyCoinAmount"></label>
+                                                                                        <input type="text" class="form-control form-control-sm tradeValues pyramidBuySettings" 
+                                                                                        id="pyramidBuyValues" placeholder="Initial Buy -- $ or %">
+
+
+                                                                                        <table class="table table-hover table-dark centertext">
+                                                                                            <thead>
+                                                                                              <tr class="smallerText">
+                                                                                                <th scope="col">Increase By</th>
+                                                                                                <th scope="col">Decrease By</th>
+                                                                                              </tr>
+                                                                                            </thead>
+                                                                                            <tbody>
+                                                                                              <tr>
+                                                                                                <td class="winHighlight">+5%</td>
+                                                                                                <td class="lossHighlight">-5%</td>
+                                                                                              </tr>
+                                                                                              <tr>
+                                                                                                  <td class="winHighlight">+10%</td>
+                                                                                                <td class="lossHighlight">-10%</td>
+                                                                                              </tr>
+                                                                                              <tr>
+                                                                                                  <td class="winHighlight">+15%</td>
+                                                                                                <td class="lossHighlight">-15%</td>
+                                                                                              </tr>
+                                                                                              <tr>
+                                                                                                  <td class="winHighlight">+20%</td>
+                                                                                                  <td class="lossHighlight">-20%</td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td class="winHighlight">+25%</td>
+                                                                                                    <td class="lossHighlight">-25%</td>
+                                                                                                  </tr>
+                                                                                                  <tr>
+                                                                                                      <td class="winHighlight">+30%</td>
+                                                                                                      <td class="lossHighlight">-30%</td>
+                                                                                                    </tr>
+                                                                                                    <tr>
+                                                                                                        <td class="winHighlight">+35%</td>
+                                                                                                        <td class="lossHighlight">-35%</td>
+                                                                                                      </tr>
+                                                                                                      <tr>
+                                                                                                          <td class="winHighlight">+40%</td>
+                                                                                                          <td class="lossHighlight">-40%</td>
+                                                                                                        </tr>
+                                                                                                        <tr>
+                                                                                                            <td class="winHighlight">+45%</td>
+                                                                                                            <td class="lossHighlight">-45%</td>
+                                                                                                          </tr>
+                                                                                                          <tr>
+                                                                                                              <td class="winHighlight">+50%</td>
+                                                                                                              <td class="lossHighlight">-50%</td>
+                                                                                                            </tr>
+                                                                                            </tbody>
+                                                                                          </table>
+
+
+                                                                                    </div>
+                                                                                  </div>
+
+
+
+
                                                                                   
+
+                                                                                  <label for="amountToBuy"></label>
+                                                                                  <input data-toggle="tooltip" data-placement="right" data-html="true" 
+                                                                                  title="<em>Use The Arrow To Left To Set Your Initial Sell Amount & To Set Increase/Decreasing Position Size Per Sell.</em>" 
+                                                                                  type="text" class="form-control takeAwayPadding" aria-label="Text input with segmented dropdown button" 
+                                                                                  id="" placeholder="Pyramid Sell Values">
+
+
+
+
+
+
+                                                                                </div>
                                                                                   
-                                                                                  <label for="pricePerPair"></label>
-                                                                                  <input type="text" class="form-control form-control-md tradeValues" id="coinExecutionPrice" placeholder="Limit Price">
-                                                                                  
-                                                                                  <div class="input-group" id="moveAmount">
+                                                                                  <div class="input-group" id="moveStopLossValuesBox">
                                                                                         <div class="input-group-prepend dropup">
                                                                                           
                                                                                           <button type="button" class="btn btn-dark dropdown-toggle dropdown-toggle-split btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -375,34 +571,31 @@
                                                                                                <a class="dropdown-item" href="#">Set Fixed Amounts</a>    
                                                                                               <div class="dropdown-divider"></div>
                                                                                               </span>
-                                                                                                <a class="dropdown-item" href="#">Sell 100%</a>
-                                                                                                <a class="dropdown-item" href="#">Sell 95%</a>
-                                                                                                <a class="dropdown-item" href="#">Sell 90%</a>
-                                                                                                <a class="dropdown-item" href="#">Sell 85%</a>
-                                                                                                <a class="dropdown-item" href="#">Sell 80%</a>
-                                                                                                <a class="dropdown-item" href="#">Sell 75%</a>
-                                                                                                <a class="dropdown-item" href="#">Sell 70%</a>
-                                                                                                <a class="dropdown-item" href="#">Sell 65%</a>
-                                                                                                <a class="dropdown-item" href="#">Sell 60%</a>
-                                                                                                <a class="dropdown-item" href="#">Sell 55%</a>
-                                                                                                <a class="dropdown-item" href="#">Sell 50%</a>
-                                                                                                <a class="dropdown-item" href="#">Sell 45%</a>
-                                                                                                <a class="dropdown-item" href="#">Sell 40%</a>
-                                                                                                <a class="dropdown-item" href="#">Sell 35%</a>
-                                                                                                <a class="dropdown-item" href="#">Sell 30%</a>
-                                                                                                <a class="dropdown-item" href="#">Sell 25%</a>
-                                                                                                <a class="dropdown-item" href="#">Sell 20%</a>
-                                                                                                <a class="dropdown-item" href="#">Sell 15%</a>
-                                                                                                <a class="dropdown-item" href="#">Sell 10%</a>
-                                                                                                <a class="dropdown-item" href="#">Sell 5%</a>
+                                                                                              <a class="dropdown-item" href="#">1% Stop-Loss</a>
+                                                                                              <a class="dropdown-item" href="#">2% Stop-Loss</a>  
+                                                                                              <a class="dropdown-item" href="#">3% Stop-Loss</a>
+                                                                                              <a class="dropdown-item" href="#">4% Stop-Loss</a>
+                                                                                                <a class="dropdown-item" href="#">5% Stop-Loss</a>
+                                                                                                <a class="dropdown-item" href="#">6% Stop-Loss</a>
+                                                                                                <a class="dropdown-item" href="#">7% Stop-Loss</a>
+                                                                                                <a class="dropdown-item" href="#">8% Stop-Loss</a>
+                                                                                                <a class="dropdown-item" href="#">9% Stop-Loss</a>
+                                                                                                <a class="dropdown-item" href="#">10% Stop-Loss</a>
+                                                                                                <span>
+                                                                                                    <div class="dropdown-divider"></div>
+                                                                                                  <a class="dropdown-item" href="#">Set Custom Percentages</a>    
+                                                                                                 <div class="dropdown-divider"></div>
+                                                                                                 </span>
+                                                                                                <a class="dropdown-item" href="#">15% Stop-Loss</a>
+                                                                                                
                                                                                           </div>
                                                                                         </div>
                                                                                         <label for="amountToSell"></label>
                                                                                         
                                                                                         <input  data-toggle="tooltip" data-placement="right" data-html="true" 
-                                                                                        title="<em>You Must Specify A '$' Sign To Set A Typed Fixed Amount Otherwise It Will Be A Percentage. Any Number larger than 100 without a '$' in front of it will default as 100%</u></b></em> <em><b><u></u></em></b>" 
+                                                                                        title="<em>This Stop-Loss Will Override Any Stop-Loss Built Into the Strategy You're Using. </u></b></em> <em> This Is NOT To Be Confused With A 'Stop-Limit' Order.<b><u></u></em></b>" 
                                                                                         type="text" class="form-control takeAwayPadding" 
-                                                                                        aria-label="Text input with segmented dropdown button" placeholder="Amount To Sell">
+                                                                                        aria-label="Text input with segmented dropdown button" placeholder="Stop Loss Override">
                                                                                       </div>
                                                                                   
                                                                                   
@@ -411,29 +604,74 @@
 
                                                                                   
                                                                                   
-                                                                                  <label for="buyCoinAmount"></label>
-                                                                                  <input type="text" class="form-control form-control-md tradeValues" id="buyCoinAmount" placeholder="USDT to receive">
-                                                                                  <button type="submit" class="btn btn-danger tradeValues" id="sellNow">Sell Now</button>
-                                                                                  <div id="moveFeeInfo">
+                                                                                  
+                                                                                  
 
-                                                                                  <div class="feeInfo">
-                                                                                        
-                                                                                        Sell BTC for USDT 
-                                                                                      </div>
-                                                                                      <div class="feeInfo">
-                                                                                        
-                                                                                        Est. Fee: 0% BTC
-                                                                                      </div>
-                                                                                    </div>
+                                                                                    
                                                                               </div>
+
+
+                                                                              
+                                                                              
                                                               
                                                               
                                                                           </div>
+
+                                                                          
+                                                        
+                                                  
+                                                                              
+                                                                          
+                                                                          
                                                                       </form>
+
+                                                                      
+                                                                      <button type="submit" class="btn btn-primary btn-sm my-1 float-right" id="applyChangesButton">Apply Changes</button>
+                                                                      
                                                                       
                                                     </div>
+
+                                                    
+                                                    
+                                                    
                                                   </div>
+
+
+                                                  
+
+
+
+                                                  <div class="custom-control custom-checkbox my-1 mr-sm-2" id="applyChangesBoxes">
+                                                      <input type="checkbox" class="custom-control-input" id="customControlInline">
+                                                      <label class="custom-control-label float-right" for="customControlInline">Save as default settings for this coin</label>
+                                                    
+                                                  
+                                                  </div>
+
+                                                  <div class="custom-control custom-checkbox my-1 mr-sm-2" id="applyChangesBoxes">
+                                                      <input type="checkbox" class="custom-control-input" id="customControlInlineGlobalSave">
+                                                      <label class="custom-control-label float-right" for="customControlInlineGlobalSave">Save as default settings for all coins</label>
+                                                    
+                                                                                                
+                                                  </div>
+                                          
+                                                  
+                                          
+                                                  
+                                                  
+
+
+
+
+
+
+
+
+                                                  
                                                  </div>
+
+                                                 
+                                                 
                                                  <!-- FORM AREA END -->
                             </div>
 

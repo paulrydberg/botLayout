@@ -10,11 +10,11 @@ body {
 }
 
 a {
-    color: aqua;
+    color: rgb(0, 216, 198);
 }
 
 a:hover {
-    color: rgb(169, 255, 255);
+    color: rgb(0, 255, 234);
 }
 
 /* width */
@@ -251,6 +251,11 @@ a:hover {
     margin-top: -20px;
 }
 
+#pyramidBuyValues {
+    margin-top: -32px;
+    margin-bottom: 2px;
+}
+
 .scrollable-amount {
     height: auto;
     max-height: 200px;
@@ -338,4 +343,68 @@ a:hover {
 
 .traderNameFont {
     font-size: 1.7vh;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.relative {
+    position: relative;
+}
+
+.smallerText {
+    font-size: 1.5vh;
+}
+
+.pyramidBuySettings {
+    top: -12px;
+}
+
+.pyramidBuyBox {
+    top: 10px;
+    left: -7.7px;
+}
+
+.applyChangesArea {
+    left: 50%;
+}
+
+.moveBuyValuesBox {
+    top: 6px;
+}
+
+#moveBuyValuesBox {
+    margin-top: 20px;
+}
+
+#moveGainValuesBox {
+    margin-top: 5px;
+}
+
+.moveBuyValuesArrow {
+    margin-top: 6px;
+}
+
+.nudgeDown {
+    margin-top: 50px;
+}
+
+#moveStopLossValuesBox {
+    margin-top: 5px;
+}
+
+#applyChangesBoxes {
+    /* margin-left: 42px; */
+    top: -85px;
+    left: -140px;
+}
+
+#applyChangesButton {
+    
+}
+
+#dontGoLongMove {
+    margin-left: 42px;
+    top: 5px;
 }
