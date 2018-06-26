@@ -329,6 +329,14 @@ a:hover {
     color: rgb(81, 255, 0);
 }
 
+.boughtHighlight {
+    color: rgb(251, 255, 0);
+}
+
+.withHighlight {
+    color: rgb(0, 255, 170);
+}
+
 #PLpagination {
     margin-top: -8px;
 }
@@ -407,4 +415,8 @@ a:hover {
 #dontGoLongMove {
     margin-left: 42px;
     top: 5px;
+}
+
+.topzindex {
+    z-index: 1000;
 }

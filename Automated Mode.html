@@ -119,7 +119,7 @@
                                                           Automatic Trading <span>(Active)</span>
                                                         </button>
                                                         <button type="button" class="btn btn-danger" data-toggle="tooltip" data-html="true" title="<em>This Will Disable Automated Trading On This Asset Until You Turn It Back On</em>">
-                                                          Manual Trading Mode <span>(OFF)</span>
+                                                          <a href="./Manual Mode.html">Manual Trading Mode <span>(OFF)</span></a>
                                                         </button>
                                                     </div>
 
@@ -264,18 +264,19 @@
                                                                   
                                                                   
 
-                                                                  <div class="custom-control custom-checkbox my-1 mr-sm-2 pyramidBuyBox" id="dontGoLongMove">
-                                                                      
-                                                                      <input type="checkbox" class="custom-control-input" id="customControlInline20">
-                                                                      <label class="custom-control-label smallerText" for="customControlInline20">Go Short After Or Instead Of Selling.</label>
-                                                                      
-                                                                      
                                                                   
-                                                                  </div>
-                                                                  <div class="custom-control custom-checkbox my-1 mr-sm-2 pyramidBuyBox" id="dontGoLongMove">
-                                                                  <input type="checkbox" class="custom-control-input" id="customControlInline21">
-                                                                  <label class="custom-control-label smallerText" for="customControlInline21">Don't Go Long, Just Close Short Positions.</label>
+                                                                  
+                                                                  <div class="custom-control custom-checkbox my-1 mr-sm-2 pyramidBuyBox topzindex" id="dontGoLongMove">
+                                                                  <input type="checkbox" class="custom-control-input" id="customControlInline27">
+                                                                  <label class="custom-control-label smallerText" for="customControlInline27">Go Short After (Or Instead Of) Selling.</label>
+                                                                  <!-- Go Short After Or Instead Of Selling. -->
                                                                     </div>
+
+                                                                    <div class="custom-control custom-checkbox my-1 mr-sm-2 pyramidBuyBox" id="dontGoLongMove">
+                                                                        <input type="checkbox" class="custom-control-input" id="customControlInline21">
+                                                                        <label class="custom-control-label smallerText" for="customControlInline21">Don't Go Long, Just Close Short Positions.</label>
+                                                                        <!-- Go Short After Or Instead Of Selling. -->
+                                                                          </div>
 
                                                                     
                                                                   
@@ -686,6 +687,121 @@
                           <div>
                             
                           </div>
+
+
+
+
+                          <div>
+                              <table class="table table-hover table-dark table-sm shadow-lg">
+                                  <thead>
+                                    <tr>
+                                      <th colspan="6">
+                                        
+                                      </th>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="6" class="shadow-lg">
+                                          <h2>
+                                              Open Positions
+                                          </h2>
+                                        </th>
+                                      </tr>
+                                    <tr>
+                                      <th scope="col">Trade #</th>
+                                      <th scope="col">Date/Time</th>
+                                      <th scope="col">Details</th>
+                                      <th scope="col">Cost</th>
+                                      <th scope="col">Current -/+ Percentage</th>
+                                      <th scope="col">Pair</th>
+                                      
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr class="">
+                                      <th scope="row">4356</th>
+                                      <td>6/23/2018</td>
+                                      <td class="">
+                                        <span class="smallerText">Bought</span>
+                                        <span class="boughtHighlight">0.234252</span>
+                                        <span class="smallerText">BTC</span>
+                                        <span>---</span>
+                                        <span class="smallerText">With</span>
+                                        <span class="withHighlight">1,500</span>
+                                        <span class="smallerText">USDT</span>
+                                      </td>
+                                      <td>
+                                        <span class="smallerText">6,000</span>
+                                        <span>USDT</span>
+                                        <span class="smallerText">per</span>
+                                        <span>BTC</span>
+                                      </td>
+                                      <td class="winHighlight">20% Profit</td>
+                                      <td>BTC/USDT</td>
+                                      
+                                    </tr>
+                                    
+                                    
+
+                                    <tr class="">
+                                        <th scope="row">4356</th>
+                                        <td>6/23/2018</td>
+                                        <td class="">
+                                          <span class="smallerText">Bought</span>
+                                          <span class="boughtHighlight">1.234252</span>
+                                          <span class="smallerText">ETH</span>
+                                          <span>---</span>
+                                          <span class="smallerText">With</span>
+                                          <span class="withHighlight">0.1083475232</span>
+                                          <span class="smallerText">BTC</span>
+                                        </td>
+                                        <td>
+                                          <span class="smallerText">0.3245235</span>
+                                          <span>BTC</span>
+                                          <span class="smallerText">per</span>
+                                          <span>ETH</span>
+                                        </td>
+                                        <td class="winHighlight">20% Profit</td>
+                                        <td>BTC/USDT</td>
+                                        
+                                      </tr>
+
+
+                                    <tr class="">
+                                      <th scope="row">4356</th>
+                                      <td>6/23/2018</td>
+                                      <td class="">
+                                        <span class="smallerText">Bought</span>
+                                        <span class="boughtHighlight">0.234252</span>
+                                        <span class="smallerText">BTC</span>
+                                        <span>---</span>
+                                        <span class="smallerText">With</span>
+                                        <span class="withHighlight">1,500</span>
+                                        <span class="smallerText">USDT</span>
+                                      </td>
+                                      <td>
+                                        <span class="smallerText">6,000</span>
+                                        <span>USDT</span>
+                                        <span class="smallerText">per</span>
+                                        <span>BTC</span>
+                                      </td>
+                                      <td class="winHighlight">20% Profit</td>
+                                      <td>BTC/USDT</td>
+                                      
+                                    </tr>
+                                    
+                                  </tbody>
+                                </table>
+                                </div>
+
+
+
+
+
+
+
+
+
+
                             
                             <div>
                             <table class="table table-hover table-dark table-sm shadow-lg">
@@ -704,7 +820,7 @@
                                     </tr>
                                   <tr>
                                     <th scope="col">Trade #</th>
-                                    <th scope="col">Date</th>
+                                    <th scope="col">Date/Time</th>
                                     <th scope="col">Amount</th>
                                     <th scope="col">Percentage</th>
                                     <th scope="col">Pair</th>
